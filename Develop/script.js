@@ -15,7 +15,7 @@ $(document).ready(function () {
     function initialize() {
         // schedule = JSON.parse(localStorage.getItem("schedule")) || [];
          
-        for (let i = 0; i < hours.length; i++) {
+        for (var i = 0; i < hours.length; i++) {
             // var schedule = JSON.parse(localStorage.getItem("schedule")) || [];
             var row = $("<row>");
             row.addClass("row");
@@ -42,9 +42,13 @@ $(document).ready(function () {
 
             // $(save).append('<img src=./Assets.save-icon-silhouette.png'); figure this out later
 
-            
+            // $(".saveBtn").on("click", function(event) {
+            //     event.preventDefaul();
 
-            
+            // })
+
+            var time = hours[i]
+
             
             
         }
